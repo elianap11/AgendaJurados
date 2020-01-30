@@ -1,0 +1,71 @@
+body {
+  width: 90%;
+  margin: 4rem;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  text-align: center;
+  background-color: #3b2c35;
+}
+
+h2, h4{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.tarjetas {
+  width: calc(25% - 6rem);
+  margin: 0.6rem;
+  cursor: pointer;
+  background-color: #3b2c35;
+  width: 13rem;
+  height: 7rem;
+  border-radius: 1rem;
+  position: relative;
+  justify-content: center;
+}
+
+.tarjetas .atras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+  background-color: #5b6c5d;
+  width: 13rem;
+  height: 7rem;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+}
+
+.tarjetas:hover .atras {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+footer {
+  width: 90%;
+  margin-top: 1.7rem;
+  position: absolute;
+  text-align: right;
+  font-family: 'Bebas Neue', cursive;
+  padding: 0.2rem;
+}
